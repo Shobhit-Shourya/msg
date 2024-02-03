@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="msg.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Siddhi Tiwari,</strong>
+                        <p>I know mujhse boht gltiyan hui h but try to understand i really love you. Meri life me koi orr nhi h bas tu h please na. Gusse gusse me boht kuch keh deta hu ik boht bada chutiyan hu but plz. Tere bina nhi reh payunga. Aaj ke baad I promise to jo bolegi wahin krunga koi body show nhi socal media pe waise toh body bann bhi nhi rhi tb bhi. Dheere dheere banaunga but nhi post krunga pakka. Abse teri family pe joke ya gusse me kuch bhi bola mai chala jaunga pakka. No more taking names of any girl even to tease you. Sorry na.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
